@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太阳系八大行星</title>
+    <style>
+        /* 页面样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #001f3f, #1e3b70);
+            color: #fff;
+            text-align: center;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #f9d71c;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        .container {
+            padding: 40px 20px;
+        }
+
+        .planet-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .planet-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .planet-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .planet-item a {
+            text-decoration: none;
+            color: #f9d71c;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .planet-item a:hover {
+            color: #ffd700;
+            text-shadow: 1px 1px 5px #fff;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #aaa;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>太阳系八大行星</h1>
+    </header>
+    <div class="container">
+        <p>欢迎来到太阳系的世界！点击下面的行星名称了解更多关于它们的详细信息。</p>
+        <div class="planet-list">
+            <!-- 水星 -->
+            <div class="planet-item">
+                <a href="web/Mercury.html" target="_blank">水星</a>
+            </div>
+            <!-- 金星 -->
+            <div class="planet-item">
+                <a href="web/Venus.html" target="_blank">金星</a>
+            </div>
+            <!-- 地球 -->
+            <div class="planet-item">
+                <a href="web/Earth.html" target="_blank">地球</a>
+            </div>
+            <!-- 火星 -->
+            <div class="planet-item">
+                <a href="web/Mars.html" target="_blank">火星</a>
+            </div>
+            <!-- 木星 -->
+            <div class="planet-item">
+                <a href="web/Jupiter.html" target="_blank">木星</a>
+            </div>
+            <!-- 土星 -->
+            <div class="planet-item">
+                <a href="web/Saturn.html" target="_blank">土星</a>
+            </div>
+            <!-- 天王星 -->
+            <div class="planet-item">
+                <a href="web/Uranus.html" target="_blank">天王星</a>
+            </div>
+            <!-- 海王星 -->
+            <div class="planet-item">
+                <a href="web/Neptune.html" target="_blank">海王星</a>
+            </div>
+        </div>
+
+        <!-- 返回按钮 -->
+        <a href="https://capricornjin.github.io/qs/" class="back-button">返回</a>
+    </div>
+    <footer>
+        <p>&copy; 2024 太阳系探索 | 设计：ChaosFate</p>
+    </footer>
+</body>
+</html>
